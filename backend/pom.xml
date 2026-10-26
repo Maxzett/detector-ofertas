@@ -20,6 +20,7 @@
     <properties>
         <java.version>21</java.version>
         <spring-modulith.version>2.1.2</spring-modulith.version>
+        <wiremock.version>3.13.2</wiremock.version>
     </properties>
 
     <dependencyManagement>
@@ -92,6 +93,13 @@
         <dependency>
             <groupId>org.springframework.modulith</groupId>
             <artifactId>spring-modulith-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <!-- Versión "standalone": trae sus dependencias sombreadas y no choca con las de Spring -->
+            <groupId>org.wiremock</groupId>
+            <artifactId>wiremock-standalone</artifactId>
+            <version>${wiremock.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

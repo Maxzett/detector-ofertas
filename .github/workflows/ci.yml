@@ -21,4 +21,25 @@ jobs:
           cache: maven
       - run: chmod +x mvnw
       - run: ./mvnw -B verify
-      
+
+      - name: Resumen de tests
+        if: always()
+        shell: python
+        run: |
+          import glob, os
+          import xml.etree.ElementTree as ET
+
+          rows, totals = [], [0, 0, 0, 0]
+          for path in sorted(glob.glob("target/surefire-reports/TEST-*.xml")):
+              suite = ET.parse(path).getroot()
+              counts = [int(suite.get(k, 0)) for k in ("tests", "failures", "errors", "skipped")]
+              totals = [a + b for a, b in zip(totals, counts)]
+              rows.append((suite.get("name").rsplit(".", 1)[-1], *counts))
+
+          tests, failures, errors, skipped = totals
+          passed = tests - failures - errors - skipped
+          lines = ["| Clase | Tests | Fallas | Errores | Omitidos |", "| --- | --- | --- | --- | --- |"]
+          lines += [f"| {name} | {t} | {f} | {e} | {s} |" for name, t, f, e, s in rows]
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
+              summary.write(f"### Tests: {passed} OK de {tests}\n\n" + "\n".join(lines) + "\n")
+          print(f"::notice title=Tests::{passed} OK, {failures} fallas, {errors} errores, {skipped} omitidos (total {tests})")

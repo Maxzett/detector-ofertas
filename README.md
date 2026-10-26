@@ -2,7 +2,7 @@
 
 Monitor de precios para tiendas online argentinas. El usuario define alertas (por ejemplo, *"botines Nike gama alta, talle 42, menos de $300.000, al menos 20% de descuento"*), el sistema sigue los productos que cumplen esos criterios en varias tiendas, guarda la evolución de sus precios y avisa por Telegram cuando aparece una oportunidad.
 
-> **Estado:** Etapa 1 de 7 (esqueleto). Ver el [plan de etapas](#plan-de-etapas).
+> **Estado:** Etapa 2 de 7: catálogo y connector VTEX. Ver el [plan de etapas](#plan-de-etapas).
 
 ## Stack
 
@@ -58,6 +58,7 @@ El detalle de cada fuente está en [`docs/sources/`](docs/sources/README.md). El
 - [ADR 0002: Un connector por plataforma, no por tienda](docs/adr/0002-conectores-por-plataforma.md)
 - [ADR 0003: El historial guarda cambios, no snapshots](docs/adr/0003-historial-solo-cambios.md)
 - [ADR 0004: Uso responsable de las fuentes](docs/adr/0004-uso-responsable-de-fuentes.md)
+- [ADR 0005: JDBC explícito para las escrituras del catálogo](docs/adr/0005-jdbc-en-el-catalogo.md)
 
 ## Cómo correrlo
 
@@ -89,6 +90,29 @@ cd backend
 mvnw.cmd verify      # Windows (cmd o PowerShell)
 ```
 
+### Importar un producto por URL
+
+Endpoint interno para cargar un producto a mano y probar los connectors (todavía sin autenticación):
+
+```bash
+curl -X POST http://localhost:8080/api/internal/listings/import \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://www.megasports.com.ar/kappa-botines---termoli-fg-blck/p"}'
+```
+
+```json
+{
+  "storeCode": "megasports",
+  "externalId": "1211155",
+  "title": "KAPPA BOTINES - TERMOLI FG BLCK",
+  "offersSeen": 7,
+  "offersCreated": 7,
+  "offersChanged": 0
+}
+```
+
+Si se repite el pedido y la tienda no cambió nada, `offersChanged` queda en 0 y no se escribe historial. Los errores siguen el formato Problem Details (RFC 9457): 422 si la tienda no está soportada, 404 si el producto no existe y 502 si la tienda no responde.
+
 ### Desarrollo sin Docker Compose
 
 Correr `TestPriceMonitorApplication` (en `src/test/java`) desde el IDE. Levanta la app con un PostgreSQL de Testcontainers, sin configurar nada más.
@@ -110,7 +134,7 @@ Correr `TestPriceMonitorApplication` (en `src/test/java`) desde el IDE. Levanta 
 
 - [x] **Etapa 0:** evaluación de fuentes ([fichas](docs/sources/README.md))
 - [x] **Etapa 1:** esqueleto: módulos, schema, Docker Compose y CI
-- [ ] **Etapa 2:** catálogo y connector VTEX
+- [x] **Etapa 2:** catálogo y connector VTEX
 - [ ] **Etapa 3:** alertas y discovery
 - [ ] **Etapa 4:** refresh y robustez (rate limit, circuit breaker, observabilidad)
 - [ ] **Etapa 5:** evaluación de alertas y notificaciones por Telegram
