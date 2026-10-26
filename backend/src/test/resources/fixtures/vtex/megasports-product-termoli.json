@@ -1,0 +1,277 @@
+[
+  {
+    "productId": "1211155",
+    "productName": "KAPPA BOTINES - TERMOLI FG BLCK",
+    "brand": "Kappa",
+    "brandId": 2000042,
+    "linkText": "kappa-botines---termoli-fg-blck",
+    "productReference": "76716005",
+    "categoryId": "3",
+    "categories": [
+      "/Calzado/Botines/",
+      "/Calzado/"
+    ],
+    "link": "https://www.megasports.com.ar/kappa-botines---termoli-fg-blck/p",
+    "items": [
+      {
+        "itemId": "1199914805",
+        "name": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 40",
+        "nameComplete": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 40",
+        "ean": "76716005400",
+        "referenceId": [
+          {
+            "Key": "RefId",
+            "Value": "76716005400"
+          }
+        ],
+        "Color": [
+          "Negro"
+        ],
+        "Talle": [
+          "40"
+        ],
+        "variations": [
+          "Color",
+          "Talle"
+        ],
+        "sellers": [
+          {
+            "sellerId": "1",
+            "sellerName": "Mega Sports",
+            "sellerDefault": true,
+            "commertialOffer": {
+              "Price": 44499,
+              "ListPrice": 62999,
+              "PriceWithoutDiscount": 44499,
+              "PriceValidUntil": "2027-10-22T00:00:00Z",
+              "AvailableQuantity": 0,
+              "IsAvailable": false
+            }
+          }
+        ]
+      },
+      {
+        "itemId": "1199914806",
+        "name": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 41",
+        "nameComplete": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 41",
+        "ean": "76716005410",
+        "referenceId": [
+          {
+            "Key": "RefId",
+            "Value": "76716005410"
+          }
+        ],
+        "Color": [
+          "Negro"
+        ],
+        "Talle": [
+          "41"
+        ],
+        "variations": [
+          "Color",
+          "Talle"
+        ],
+        "sellers": [
+          {
+            "sellerId": "1",
+            "sellerName": "Mega Sports",
+            "sellerDefault": true,
+            "commertialOffer": {
+              "Price": 44499,
+              "ListPrice": 62999,
+              "PriceWithoutDiscount": 44499,
+              "PriceValidUntil": "2027-10-22T00:00:00Z",
+              "AvailableQuantity": 10,
+              "IsAvailable": true
+            }
+          }
+        ]
+      },
+      {
+        "itemId": "1199914807",
+        "name": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 42",
+        "nameComplete": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 42",
+        "ean": "76716005420",
+        "referenceId": [
+          {
+            "Key": "RefId",
+            "Value": "76716005420"
+          }
+        ],
+        "Color": [
+          "Negro"
+        ],
+        "Talle": [
+          "42"
+        ],
+        "variations": [
+          "Color",
+          "Talle"
+        ],
+        "sellers": [
+          {
+            "sellerId": "1",
+            "sellerName": "Mega Sports",
+            "sellerDefault": true,
+            "commertialOffer": {
+              "Price": 44499,
+              "ListPrice": 62999,
+              "PriceWithoutDiscount": 44499,
+              "PriceValidUntil": "2027-10-22T00:00:00Z",
+              "AvailableQuantity": 100,
+              "IsAvailable": true
+            }
+          }
+        ]
+      },
+      {
+        "itemId": "1199914808",
+        "name": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 43",
+        "nameComplete": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 43",
+        "ean": "76716005430",
+        "referenceId": [
+          {
+            "Key": "RefId",
+            "Value": "76716005430"
+          }
+        ],
+        "Color": [
+          "Negro"
+        ],
+        "Talle": [
+          "43"
+        ],
+        "variations": [
+          "Color",
+          "Talle"
+        ],
+        "sellers": [
+          {
+            "sellerId": "1",
+            "sellerName": "Mega Sports",
+            "sellerDefault": true,
+            "commertialOffer": {
+              "Price": 44499,
+              "ListPrice": 62999,
+              "PriceWithoutDiscount": 44499,
+              "PriceValidUntil": "2027-10-22T00:00:00Z",
+              "AvailableQuantity": 100,
+              "IsAvailable": true
+            }
+          }
+        ]
+      },
+      {
+        "itemId": "1199914809",
+        "name": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 44",
+        "nameComplete": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 44",
+        "ean": "76716005440",
+        "referenceId": [
+          {
+            "Key": "RefId",
+            "Value": "76716005440"
+          }
+        ],
+        "Color": [
+          "Negro"
+        ],
+        "Talle": [
+          "44"
+        ],
+        "variations": [
+          "Color",
+          "Talle"
+        ],
+        "sellers": [
+          {
+            "sellerId": "1",
+            "sellerName": "Mega Sports",
+            "sellerDefault": true,
+            "commertialOffer": {
+              "Price": 44499,
+              "ListPrice": 62999,
+              "PriceWithoutDiscount": 44499,
+              "PriceValidUntil": "2027-10-22T00:00:00Z",
+              "AvailableQuantity": 100,
+              "IsAvailable": true
+            }
+          }
+        ]
+      },
+      {
+        "itemId": "1199914810",
+        "name": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 45",
+        "nameComplete": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 45",
+        "ean": "76716005450",
+        "referenceId": [
+          {
+            "Key": "RefId",
+            "Value": "76716005450"
+          }
+        ],
+        "Color": [
+          "Negro"
+        ],
+        "Talle": [
+          "45"
+        ],
+        "variations": [
+          "Color",
+          "Talle"
+        ],
+        "sellers": [
+          {
+            "sellerId": "1",
+            "sellerName": "Mega Sports",
+            "sellerDefault": true,
+            "commertialOffer": {
+              "Price": 44499,
+              "ListPrice": 62999,
+              "PriceWithoutDiscount": 44499,
+              "PriceValidUntil": "2027-10-22T00:00:00Z",
+              "AvailableQuantity": 10,
+              "IsAvailable": true
+            }
+          }
+        ]
+      },
+      {
+        "itemId": "1199940244",
+        "name": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 39",
+        "nameComplete": "KAPPA BOTINES - TERMOLI FG BLCK - Talle 39",
+        "ean": "",
+        "referenceId": [
+          {
+            "Key": "RefId",
+            "Value": "76716005390"
+          }
+        ],
+        "Color": [
+          "Negro"
+        ],
+        "Talle": [
+          "39"
+        ],
+        "variations": [
+          "Color",
+          "Talle"
+        ],
+        "sellers": [
+          {
+            "sellerId": "1",
+            "sellerName": "Mega Sports",
+            "sellerDefault": true,
+            "commertialOffer": {
+              "Price": 44499,
+              "ListPrice": 62999,
+              "PriceWithoutDiscount": 44499,
+              "PriceValidUntil": "2027-10-22T00:00:00Z",
+              "AvailableQuantity": 0,
+              "IsAvailable": false
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
