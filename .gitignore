@@ -1,0 +1,25 @@
+# Secretos
+.env
+
+# Java / Maven
+target/
+*.class
+*.log
+HELP.md
+.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Node (frontend, Etapa 6)
+node_modules/
+dist/
+
+# SO
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+# Fin de línea LF en el repo para todo lo de texto: evita que mvnw y los scripts
+# se rompan dentro de los contenedores Linux cuando se trabaja en Windows.
+* text=auto eol=lf
+
+# Los scripts de Windows sí necesitan CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+*.jar binary
+*.png binary
+*.jpg binary
+*.gif binary
